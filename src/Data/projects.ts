@@ -1,0 +1,58 @@
+import { Project } from "../Types";
+
+export const projects: Project[] = [
+    {
+        id: "63bc793ec1fd6637f05d67f8",
+        imgPath: "https://www.gadgetronicx.com/wp-content/uploads/2018/04/random-num-gen-1170x625.jpg",
+        title: "Electrical circuit",
+        description: "Hobby electrical circuit.",
+        name: "Jane Doe",
+        email: "janedoe@gmail.com",
+        address: "New Delhi, India",
+    },
+    {
+        id: "63bc7c397d4efedc0524b3fd",
+        imgPath: "https://i.pinimg.com/originals/18/3e/48/183e487227964bda30076e39f07feb14.jpg",
+        title: "Wooden table",
+        description: "Wooden table created from oak tree.",
+        name: "Mary Rosamund",
+        email: "agra@rosie.com",
+        address: "Tbilisi, India",
+    },
+    {
+        id: "63bc7c76bdc91d4ed7533076",
+        imgPath: "https://dreamcivil.com/wp-content/uploads/2022/06/ezgif.com-gif-maker-33.webp",
+        title: "Brick wall",
+        description: "Brick wall between my plot and the neighbour's.",
+        name: "Sherlock Watson",
+        email: "irene@johnlock.com",
+        address: "Baker Street, India",
+    },
+    {
+        id: "63bc7cb5aba0dea78313dc2a",
+        imgPath: "http://elektricar011.com/wp-content/uploads/2016/10/Uvodjenje-struje.jpg",
+        title: "Home electrical grid",
+        description: "Electrical grid in the livingroom.",
+        name: "John Holmes",
+        email: "mary@johnlock.com",
+        address: "Baker Street, India",
+    },
+    {
+        id: "63bc7d4b36c05d63ff8a9ea2",
+        imgPath: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autoguru.com.au%2Fcar-advice%2Farticles%2Ffive-parts-that-should-be-changed-during-a-clutch-replacement&psig=AOvVaw2m6hLEM1W6Xo_NJ8GU65x6&ust=1673383680723000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNig2ZCuu_wCFQAAAAAdAAAAABAE",
+        title: "Clutch replacement",
+        description: "Clutch replacement in Renault Megane.",
+        name: "Mycroft Lestrade",
+        email: "britishgovt@gmail.com",
+        address: "London, India",
+    },
+    {
+        id: "63bc7e8550e47d758b8af55e",
+        imgPath: "https://myhouse-fr.desigusxpro.com/wp-content/uploads/2016/07/razvodka-trub-v-vannoj-5.jpg",
+        title: "Plumbery in bathroom",
+        description: "Exchanging the water pipe with plastic pipes.",
+        name: "Tom Nash",
+        email: "tomnasht@gmail.com",
+        address: "London, India",
+    },
+];

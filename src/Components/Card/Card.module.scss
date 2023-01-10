@@ -1,0 +1,45 @@
+$bordercolor:#f5f5f5;
+
+.card {
+    color: #3F3F3F !important;
+    //text-shadow: 1px 2px 10px #3F3F3F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    max-height: 200px;
+    background-color: white;
+    border: 1px solid $bordercolor;
+    border-radius: 25px;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+}
+
+.card:hover {
+    filter: brightness(97%);
+    border: 1px solid lighten($bordercolor, 50%);
+    color: black !important;
+    //text-shadow: 1px 2px 10px #3F3F3F;
+}
+
+.image {
+    max-width: 170px;
+    height: 200px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.content {
+    margin: 20px 10px;
+}
+
+.title {
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+}
