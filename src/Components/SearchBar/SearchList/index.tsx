@@ -12,10 +12,10 @@ export const SearchList: FunctionComponent<Props> = ({
   onClick,
 }) => {
   return (
-    <ul>
+    <div>
       {filteredProjects.map(({ title }) => (
         <SearchElement title={title} onClick={onClick} />
       ))}
-    </ul>
+    </div>
   );
 };

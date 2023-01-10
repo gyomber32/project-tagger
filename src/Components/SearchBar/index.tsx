@@ -2,8 +2,8 @@ import React, { FunctionComponent, useState } from "react";
 import { Project } from "../../Types";
 import { Scroll } from "./Scroll";
 import { SearchList } from "./SearchList";
-import styles from "./SearchBar.module.scss";
 import { SearchElement } from "./SearchElement";
+import styles from "./SearchBar.module.scss";
 
 type Props = {
   projects: Project[];
@@ -13,10 +13,10 @@ type Props = {
 export const SearchBar: FunctionComponent<Props> = ({ projects, onClick }) => {
   const [searchField, setSearchField] = useState("");
 
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = projects.filter(({ title, description }) => {
     return (
-      project.title.toLowerCase().includes(searchField.toLowerCase()) ||
-      project.description.toLowerCase().includes(searchField.toLowerCase())
+      title.toLowerCase().includes(searchField.toLowerCase()) ||
+      description.toLowerCase().includes(searchField.toLowerCase())
     );
   });
 
@@ -26,7 +26,7 @@ export const SearchBar: FunctionComponent<Props> = ({ projects, onClick }) => {
 
   function searchList() {
     if (!filteredProjects?.length) {
-      return <SearchElement title="Project not found"/>;
+      return <SearchElement title="Project not found" />;
     }
 
     return (
@@ -37,16 +37,16 @@ export const SearchBar: FunctionComponent<Props> = ({ projects, onClick }) => {
   }
 
   return (
-    <section className="garamond">
-      <div className="pa2">
+    <div className={styles.container}>
+      <div className={styles.input}>
         <input
-          className="p"
+          className={styles.input_field}
           type="search"
           placeholder="Search project"
           onChange={handleChange}
         />
       </div>
-      {searchField?.length >= 3 && searchList()}
-    </section>
+      {searchField?.length >= 2 && searchList()}
+    </div>
   );
 };
