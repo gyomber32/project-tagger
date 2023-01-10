@@ -1,10 +1,11 @@
 import "./App.css";
-import { Button, Card } from "./Components";
+import { Button, Card, Header } from "./Components";
 import { RiAddFill } from "react-icons/ri";
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Button
         title="Add"
         iconType={RiAddFill}
