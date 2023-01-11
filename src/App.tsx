@@ -1,11 +1,14 @@
 import "./App.css";
 import { Button, Card, Header } from "./Components";
 import { RiAddFill } from "react-icons/ri";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <RouterProvider router={router} />
+      {/*  <Header />
       <Button
         title="Add"
         iconType={RiAddFill}
@@ -17,7 +20,7 @@ function App() {
         title="Title"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         onClick={() => {}}
-      ></Card>
+      ></Card> */}
     </div>
   );
 }
