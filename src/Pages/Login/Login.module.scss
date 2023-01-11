@@ -1,0 +1,19 @@
+.container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.field {
+    margin: 5px 0px;
+}
+
+.error {
+    color: red;
+    margin: 2px;
+}
+
+.submit {
+    margin-top: auto;
+}
