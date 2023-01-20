@@ -1,9 +1,15 @@
+import { Address } from "./Address";
+
+type Image = {
+    path: string;
+    isThumbnail: boolean;
+}
+
 export type Project = {
     id: string;
-    imgPath: string;
     title: string;
     description: string;
-    name: string;
-    email: string;
-    address: string;
+    address: Address;
+    images: Image[]
+    userId: string;
 }
