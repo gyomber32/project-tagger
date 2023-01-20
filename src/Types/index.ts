@@ -1,3 +1,5 @@
 import { Project } from "./Project";
+import { User } from "./User";
+import { Address } from "./Address";
 
-export type { Project }
+export type { Address, Project, User };
