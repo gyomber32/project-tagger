@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import { IconType } from "react-icons";
 import { Icon, IconSize } from "../Icon";
 import classnames from "classnames";
@@ -25,7 +25,6 @@ export const Button: React.FC<Props> = ({
   iconColor,
   onClick,
 }) => {
-  console.log(className);
   return (
     <button
       className={classnames(styles.button, className)}
