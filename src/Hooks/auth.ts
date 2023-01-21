@@ -4,15 +4,15 @@ import { useNavigate } from 'react-router-dom';
 import { login } from "../Api";
 import { ActionTypes } from "../Store/Actions/index"
 
-export const useLogin = () => {
+export const useLogin = (mock = false) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const loginCallback = useCallback(async (email: string, password: string) => {
+    const loginCallback = useCallback(async (email: string, password: string,) => {
         try {
             dispatch({ type: ActionTypes.TOGGLE_LOADER });
-            const result = await login(email, password);
-            dispatch({ type: ActionTypes.ADD_USER, payload: result.data });
+            const result = await login(email, password, mock);
+            dispatch({ type: ActionTypes.ADD_USER, payload: result });
             dispatch({ type: ActionTypes.TOGGLE_LOADER });
             navigate("/");
         }

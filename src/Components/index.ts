@@ -4,5 +4,7 @@ import { Icon } from "./Icon";
 import { Header } from "./Header";
 import { Logo } from "./Logo";
 import { HasAccount } from "./HasAccount";
+import { LoadingSpinner } from "./LoadingSpinner";
+import { Overlay } from "./Overlay";
 
-export { Button, Card, Icon, HasAccount, Header, Logo };
+export { Button, Card, Icon, HasAccount, Header, Logo, LoadingSpinner, Overlay };

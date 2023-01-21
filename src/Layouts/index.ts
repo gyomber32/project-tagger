@@ -1,3 +1,4 @@
 import { FormContainer } from "./FormContainer";
+import { OverlayLayout } from "./OverlayLayout";
 
-export { FormContainer };
+export { FormContainer, OverlayLayout };
