@@ -1,0 +1,16 @@
+@import '../../../Styles/variables';
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid $border_color;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-shadow: $box_shadow;
+}
+.item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}

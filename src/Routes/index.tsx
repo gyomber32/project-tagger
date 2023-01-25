@@ -1,9 +1,12 @@
+import { PropsWithChildren } from "react";
 import { useSelector } from "react-redux";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { HomePage, LoginPage, NotFound, Project } from "../Pages";
 import { getUser } from "../Store/Selectors";
 
-const ProtectedRoute = ({ children }) => {
+type Props = { children: JSX.Element };
+
+const ProtectedRoute = ({ children }: Props): JSX.Element => {
   const user = useSelector(getUser);
 
   if (!Object.keys(user).length) {

@@ -1,14 +1,17 @@
-@import "../../../Styles/variables";
+@import "../../Styles/variables";
 
 .container {
+    border: 2px solid red;
+}
+
+.dropdown {
     position: absolute;
-    overflow-y: auto;
-    max-height: 200px;
-    width: inherit;
+    right: 10px;
+    width: 200px;
     margin-top: 5px;
     background-color: white;
     border: 1px solid $border_color;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: $box_shadow;
     z-index: 1;
 }

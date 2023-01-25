@@ -1,3 +1,5 @@
+@import "../../Styles/variables";
+
 .container {
     height: 200px;
     display: flex;
@@ -10,7 +12,7 @@
 }
 
 .error {
-    color: red;
+    color: $error_color;
     margin: 2px;
 }
 

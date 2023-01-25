@@ -4,6 +4,7 @@ import { SearchBar } from "../SearchBar";
 import styles from "./Header.module.scss";
 
 import { projects } from "../../Data/projects";
+import { Menu } from "../Menu";
 
 export const Header = () => {
   const navigateToPage = () => {
@@ -14,7 +15,7 @@ export const Header = () => {
     <div className={styles.container}>
       <Logo onClick={() => {}} />
       <SearchBar projects={projects} onClick={navigateToPage} />
-      <div>Menu</div>
+      <Menu />
     </div>
   );
 };

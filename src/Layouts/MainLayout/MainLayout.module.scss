@@ -1,0 +1,31 @@
+@import "../../Styles/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 2px solid $border_color;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 0.25 1 auto;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid $border_color;
+    //box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+}
+
+.children {
+    flex: 4 1 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,6 +1,6 @@
 import { Address } from "./Address";
 
-type Image = {
+export type Image = {
     path: string;
     isThumbnail: boolean;
 }
